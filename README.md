@@ -11,13 +11,14 @@ reserved word as well, even if it is mixed case or in leet speak!
 
 For example, adding the word "sample" to the list of reserved words would prevent any of the following
 shorturls:
-1. http://sho.rt/sample
-2. http://sho.rt/sample
-3. http://sho.rt/1sample34
-4. http://sho.rt/sampl3
+
+- http://sho.rt/sample
+- http://sho.rt/sample
+- http://sho.rt/1sample34
+- http://sho.rt/sampl3
 
 Because Advanced Reserved URLs will match terms in the middle of a shorturl there is no need to include
-multiple variations in the blocked list such as a**, a**hole, a**holes, etc.  Advanced Reserved URLs also
+multiple variations in the blocked list such as ass, asshole, assholes, etc.  Advanced Reserved URLs also
 forces the shorturl to lowercase before the comparison is made there for catching mixed case results
 so feel free to set YOURLS_URL_CONVERT to 62 and include uppercase letters!
 
