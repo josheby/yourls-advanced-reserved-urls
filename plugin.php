@@ -3,7 +3,7 @@
 Plugin Name: Advanced Reserved URLs
 Plugin URI: http://github.com/josheby/yourls-advanced-reserved-urls
 Description: Keyword Filter For YOURLS
-Version: 1.0
+Version: 1.1
 Author: Josh Eby
 Author URI: http://josheby.com/
 
@@ -34,7 +34,7 @@ function advanced_reserved_urls($reserved, $keyword) {
 	
 	// Generate the terms list by merging the Advanced Reserved URLs list along with any custom
 	// terms that might have been included in the core variable defined in config.php.
-	$terms = array_merge( advanced_reserved_urls_terms(), $yourls_reserved_URL );
+	$terms = $yourls_reserved_URL;
 		
 	// In order to filter upper, lower, and mixed case variations, force the keyword to lowercase.
 	// This enforces filtering even when including uppercase letters in the charset.
@@ -66,56 +66,3 @@ function advanced_reserved_urls($reserved, $keyword) {
 	return $reserved;
 }
 yourls_add_filter( 'keyword_is_reserved', 'advanced_reserved_urls');
-
-function advanced_reserved_urls_terms() {
-	return array(
-		'666',
-		'69',
-		'abortion',
-		'anal',
-		'anus',
-		'areola',
-		'areoli',
-		'ass',
-		'balls',
-		'bastard',
-		'basterd',
-		'beaner',
-		'bitch',
-		'blowjob',
-		'blumpkin',
-		'boner',
-		'boob',
-		'butt',
-		'christ',
-		'clit',
-		'crap',
-		'cum',
-		'cunt',
-		'dick',
-		'fag',
-		'fart',
-		'fuck',
-		'gay',
-		'god',
-		'jesus',
-		'lmao',
-		'lmfao',
-		'nigger',
-		'omg',
-		'penis',
-		'poop',
-		'porn',
-		'pussy',
-		'satan',
-		'sex',
-		'shat',
-		'shit',
-		'tit',
-		'twat',
-		'vagina',
-		'vulva',
-		'xxx',
-		'wtf',
-	);
-}
