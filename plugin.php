@@ -4,8 +4,8 @@ Plugin Name: Advanced Reserved URLs
 Plugin URI: http://github.com/josheby/yourls-advanced-reserved-urls
 Description: Keyword Filter For YOURLS
 Version: 1.1
-Author: Josh Eby
-Author URI: http://josheby.com/
+Author: Joshua Eby
+Author URI: https://josheby.com/
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
