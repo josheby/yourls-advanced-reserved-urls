@@ -13,7 +13,7 @@ For example, adding the word "sample" to the list of reserved words would preven
 shorturls:
 
 - http://sho.rt/sample
-- http://sho.rt/sample
+- http://sho.rt/Sample
 - http://sho.rt/1sample34
 - http://sho.rt/sampl3
 
